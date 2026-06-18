@@ -109,3 +109,20 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+
+
+
+
+.light {
+  background-color: #ffffff;
+  color: #111111;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+  min-height: 100vh;
+}
