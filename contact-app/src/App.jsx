@@ -17,3 +17,12 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
+//cd D:\python\server
+//node server.js
+
+//cd D:\python\project\contact-app
+//npm run dev
+
+
+
