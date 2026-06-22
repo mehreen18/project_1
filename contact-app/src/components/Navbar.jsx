@@ -21,7 +21,7 @@ export default function Navbar() {
         zIndex: 100,
       }}>
 
-        {/* LEFT — Logo */}
+        
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <div style={{
             width: "34px", height: "34px", borderRadius: "10px",
@@ -36,7 +36,7 @@ export default function Navbar() {
           }}>ContactBook</span>
         </div>
 
-        {/* CENTER — Nav links */}
+       
         <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
           {[
             { label: "Dashboard", path: "/" },
@@ -62,7 +62,7 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* RIGHT — Theme toggle */}
+        
         <button onClick={toggleTheme} style={{
           display: "flex", alignItems: "center", gap: "7px",
           padding: "8px 16px", borderRadius: "8px", border: "none",

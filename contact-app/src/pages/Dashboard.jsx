@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   const isDark = theme === "dark";
 
-  // theme colors
+  
   const pageBg    = isDark ? "#0f0f1a" : "#f5f7ff";
   const cardBg    = isDark ? "#1a1a2e" : "#ffffff";
   const textMain  = isDark ? "#f9fafb" : "#111827";
@@ -54,7 +54,7 @@ export default function Dashboard() {
     transition: "border 0.2s",
   };
 
-  // get initials from name for avatar
+  
   const getInitials = (name) => {
     if (!name) return "?";
     const parts = name.trim().split(" ");
@@ -63,7 +63,7 @@ export default function Dashboard() {
       : parts[0][0].toUpperCase();
   };
 
-  // random soft color per contact based on name
+
   const avatarColors = [
     { bg: "#dbeafe", text: "#1d4ed8" },
     { bg: "#ede9fe", text: "#6d28d9" },
@@ -92,7 +92,7 @@ export default function Dashboard() {
         gap: "28px",
       }}>
 
-        {/* Page header */}
+       
         <div>
           <h1 style={{ margin: 0, fontSize: "24px", fontWeight: "700", color: textMain }}>
             Contact Dashboard
@@ -102,7 +102,7 @@ export default function Dashboard() {
           </p>
         </div>
 
-        {/* Stats bar */}
+       
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
@@ -130,7 +130,7 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* Add contact form */}
+        
         <div style={{
           background: cardBg,
           borderRadius: "16px",
@@ -148,7 +148,7 @@ export default function Dashboard() {
               gap: "14px",
               marginBottom: "16px",
             }}>
-              {/* Name */}
+              
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 <label style={{ fontSize: "12px", fontWeight: "600", color: textLabel }}>
                   Full Name *
@@ -164,7 +164,7 @@ export default function Dashboard() {
                 />
               </div>
 
-              {/* Phone */}
+              
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 <label style={{ fontSize: "12px", fontWeight: "600", color: textLabel }}>
                   Phone Number
@@ -179,7 +179,7 @@ export default function Dashboard() {
                 />
               </div>
 
-              {/* Email */}
+              
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 <label style={{ fontSize: "12px", fontWeight: "600", color: textLabel }}>
                   Email Address
@@ -195,7 +195,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Success message */}
+            
             {success && (
               <div style={{
                 background: isDark ? "#052e16" : "#f0fdf4",
@@ -225,7 +225,7 @@ export default function Dashboard() {
           </form>
         </div>
 
-        {/* Contacts list */}
+        
         <div style={{
           background: cardBg,
           borderRadius: "16px",
@@ -280,7 +280,7 @@ export default function Dashboard() {
                   onMouseEnter={e => e.currentTarget.style.background = isDark ? "#1e1e3a" : "#f9fafb"}
                   onMouseLeave={e => e.currentTarget.style.background = "transparent"}
                 >
-                  {/* Avatar */}
+                  
                   <div style={{
                     width: "42px", height: "42px",
                     borderRadius: "50%",
@@ -293,7 +293,7 @@ export default function Dashboard() {
                     {initials}
                   </div>
 
-                  {/* Info */}
+                  
                   <div style={{ flex: 1 }}>
                     <div style={{
                       fontWeight: "600", fontSize: "14px", color: textMain,
