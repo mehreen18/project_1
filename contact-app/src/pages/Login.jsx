@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext"; // ADD THIS
+import { useTheme } from "../context/ThemeContext";
 
 export default function Login() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -8,9 +8,9 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const { theme } = useTheme(); // ADD THIS
+  const { theme } = useTheme(); 
 
-  // colors that change based on theme
+  
   const isDark = theme === "dark";
   const bg        = isDark ? "#0f0f1a" : "#eff6ff";
   const bg2       = isDark ? "#f5f3ff" : "#f5f3ff";
@@ -90,7 +90,7 @@ export default function Login() {
         border: isDark ? "1px solid #2e2e4e" : "none",
       }}>
 
-        {/* Logo */}
+        
         <div style={{
           width: "52px", height: "52px",
           borderRadius: "14px",
@@ -100,7 +100,7 @@ export default function Login() {
           marginBottom: "16px",
         }}>C</div>
 
-        {/* Title */}
+        
         <h2 style={{
           margin: "0 0 6px 0",
           fontSize: "22px",
@@ -117,7 +117,7 @@ export default function Login() {
           {isSignUp ? "Sign up to get started" : "Login to your ContactBook"}
         </p>
 
-        {/* Form */}
+        
         <form onSubmit={handleSubmit} style={{
           width: "100%",
           display: "flex",
